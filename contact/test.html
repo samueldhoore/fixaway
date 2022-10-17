@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="https://dl.dropbox.com/s/camshsyalksi27j/Logo.png?dl=1" type="image/icon type">
+    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+
+</head>
+<body>
+    <header>
+        <div width="100%" style="text-align: center;"><img src="https://dl.dropbox.com/s/camshsyalksi27j/Logo.png?dl=1" width="200px"></div>
+    </header>
+    
+    <article>
+        <h1>Complaintsedit</h1>
+        <table>
+        <tbody><tr class="complaints">
+            <td id="form" style="/*! background-color: gray; */">
+            <form action="/" method="GET">
+                <div class="formtext">
+                    <input name="name" placeholder="Name*" class="textbox" type="text">
+                    <p><input name="surname" class="textbox" type="text" placeholder="Surname*"></p>
+                    <p><input name="e-mail" placeholder="e-mail" class="textbox" type="email"></p>
+                </div>
+                <div class="formbuttons">
+                    <p>what's the problem?<br>
+                    <input type="radio" name="complaint" value="badroad"> bad road <br>
+                    <input type="radio" name="complaint" value="inconvenient"> inconvenient roadwork <br>
+                    <input type="radio" name="complaint" value="other"> other
+                    </p>
+                </div>
+                <div class="formtext">
+                    <p>
+                    <textarea class="textbox" name="location" placeholder="location*"></textarea>
+                    </p>
+                    <p>
+                    <input class="textbox" type="url" name="url" placeholder="picture link">
+                    </p>
+                    <p>
+                    <textarea class="textbox" name="comments" placeholder="comments"></textarea>
+                    </p>
+                </div>
+                <div class="formsubmit">
+                    <input id="submit-complaint" type="submit" value="SEND">
+                </div>
+            </form>
+            </td>
+            <td id="pic1">
+                <img class="pic" src="https://dl.dropbox.com/s/o1r478rslu98f1h/Form_image.jpg?dl=1">
+            </td>
+        </tr>
+        
+        </tbody></table>
+    </article>
+
+    <article>
+        <h1>Complaints</h1>
+        <div id="complaints">
+            <form action="/" method="GET">
+                <p><input type="text" name="name" placeholder="Name"/><span class="necessary">*</span></p>
+                <p><input type="text" name="surname" placeholder="Surname"/><span class="necessary">*</span></p>
+                <p><input type="email" name="e-mail" placeholder="e-mail"/><span class="necessary">*</span></p>
+                <p>
+                what's the problem?<span class="necessary">*</span><br/>
+                <input type="radio" name="complaint" value="badroad" /> bad road <br />
+                <input type="radio" name="complaint" value="inconvenient" /> inconvenient roadwork <br />
+                <input type="radio" name="complaint" value="other" /> other<br />
+                </p>
+                <p>
+                Where is the problem?<span class="necessary">*</span><br/>
+                <textarea class="textbox" name="where-problem"></textarea>
+                </p>
+                <p>
+                Add a link to a picture maybe?<br/>
+                <input class="textbox" type="url" name="url"/>
+                </p>
+                <p>
+                Other comments?<br/>
+                <textarea class="textbox" name="comments"></textarea>
+                </p>
+        
+                <input type="submit" value="submit" />
+            </form>
+        </div>
+        <div id="pic">
+            <img width="200px" src="https://dl.dropbox.com/s/o1r478rslu98f1h/Form_image.jpg?dl=1" />
+        </div>
+    </article>
+    
+</body>
+</html>

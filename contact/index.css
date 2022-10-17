@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(224, 210, 210);
+}
+
+
+article {
+    margin:10px auto;
+    width:840px;
+    padding:10px;
+    text-align: center;
+}
+
+tr.complaints {
+    align-content: center;
+}
+
+td#form {
+    width: 12rem;
+    vertical-align: top;
+}
+
+.textbox {
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+}
+
+.formbuttons {
+    display: inline-block;
+    text-align: left;
+}
+
+#submit-complaint {
+    padding: 10px;
+}
+
+td#pic1 {
+    padding-left: 3rem;
+}
+
+img.pic {
+    width:100%;
+}
+
+section {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px auto;
+}
