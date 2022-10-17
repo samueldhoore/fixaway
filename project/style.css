@@ -5,3 +5,9 @@
 
     
 } 
+
+.icons {
+    height: 2rem;
+    width: 4rem;
+    z-index: 9999;
+}
