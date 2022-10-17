@@ -33,14 +33,27 @@ a { color: white; }
   display: flex;
   justify-content: space-around;
 }
-.selected {
-  color: #FF6633;
-  background-color:
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
 }
-a:link { text-decoration: none; }
 
-a:visited { text-decoration: none; }
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
 
-a:hover { text-decoration: none; }
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
 
-a:active { text-decoration: none; }
+a:active {
+  color: #FF6633;
+  background-color: white;
+  text-decoration: underline;
+}
