@@ -1,11 +1,18 @@
 body {
-    background-color: rgb(224, 210, 210);
+    /*! background-color: rgb(224, 210, 210); */
+    font-family: helvetica neue;
+    font-size: 1rem;
 }
 
+h1 {
+    color: #FF6633;
+    font-family: impact;
+    font-size: 3rem;
+}
 
 article {
     margin:10px auto;
-    width:840px;
+    width:960px;
     padding:10px;
     text-align: center;
 }
@@ -15,18 +22,26 @@ tr.complaints {
 }
 
 td#form {
-    width: 12rem;
+    width: 18rem;
     vertical-align: top;
 }
 
 .textbox {
     width: 100%;
     padding: 10px 0px 10px 10px;
+    border:solid 1px #33CCFF;
+    font-family: helvetica neue;
+    font-size: 1rem;
 }
 
 .formbuttons {
     display: inline-block;
     text-align: left;
+}
+
+#sendbutton {
+    width: 5rem;
+    padding-left: 1rem;
 }
 
 #submit-complaint {
