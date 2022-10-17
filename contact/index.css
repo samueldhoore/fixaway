@@ -1,8 +1,27 @@
+* { /* reset van de site */
+    
+    box-sizing: inherit; 
+}
+
 body {
     /*! background-color: rgb(224, 210, 210); */
     font-family: helvetica neue;
     font-size: 1rem;
+    /* reset van de site, verwijder stomme padding */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+img#logo {
+    /* width: 71px; */
+    height: 4.5rem;
+    position: absolute;
+}
+
+img#banner {
+    height: 4.5rem;
+} 
 
 h1 {
     color: #FF6633;
