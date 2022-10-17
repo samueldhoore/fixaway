@@ -1,15 +1,35 @@
-html { height: 720px; width: 720px; padding: 100; margin: 100; }
-h1 { color: #33CCFF; text-align: center; }
-h2 { color: #FF6633; text-align: center; }
-p { text-align: justify; text-align-last: center; }
-ul { background-color: #FF6633; text-align: center; }
+html {
+  height: 720px;
+  width: 720px;
+  padding: 100;
+  margin: 100;
+  }
+h1 {
+color: #33CCFF;
+text-align: center;
+}
+h2 {
+color: #FF6633;
+text-align: center;
+}
+p {
+text-align: justify;
+text-align-last: center; 
+}
+ul {
+background-color: #FF6633;
+text-align: center;
+display: flex;
+justify-content: space-around;
+}
 li { display: inline; }
 a { color: white; }
 .stripe {
   width: 25px;
 	height: 30px;
 	transform: skew(-50deg);
-	background-color: #FF6633; }
+	background-color: #FF6633;
+  }
 .stripes {
   display: flex;
   justify-content: space-around;
