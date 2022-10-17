@@ -6,9 +6,9 @@ ul { background-color: #FF6633; text-align: center; }
 li { display: inline; }
 a { color: white; }
 .stripe {
-  width: 18px;
+  width: 25px;
 	height: 30px;
-	transform: skew(-40deg);
+	transform: skew(-50deg);
 	background-color: #FF6633; }
 .stripes {
   display: flex;
