@@ -83,3 +83,11 @@ u {
   color: white;
   background-color: #FF6633;
 }
+.language {
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+.EN {
+  text-decoration: none;
+  color: #33CCFF;
+}
