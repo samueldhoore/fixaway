@@ -41,7 +41,7 @@ justify-content: space-around;
 }
 
 .stripe {
-  width: 25px;
+  width: 26px;
 	height: 26px;
 	transform: skew(-50deg);
 	background-color: #FF6633;
