@@ -16,16 +16,19 @@ text-align: center;
 }
 
 h2 {
+margin: 4rem 0 1rem 0;
 font-family: 'Oswald', sans-serif;
 color: #FF6633;
 text-align: center;
 }
 
+.main{
+  padding: 5rem 10rem 5rem 10rem;
+}
 p {
 font-family: 'Roboto Serif', serif;
 text-align: justify;
 text-align-last: center;
-padding: 0rem, 5rem, 0rem, 5rem;
 }
 
 nav {
@@ -94,77 +97,4 @@ u {
 .aboutus {
   display: flex;
   align-items: baseline;
-}
-.copyright-bar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  justify-items: center;
-  padding: 1rem;
-  margin-top: 4rem;
-  z-index: auto;
-}
-
-.footer__copyright-bar__list--item {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  margin-left: 1rem;
-  margin-right: 1.5rem;
-  list-style-type: none;
-  color: white;
-  font-family: "Filson Pro", "Arial Narrow", Arial, sans-serif;
-}
-
-.footer-btn-link {
-  color: white;
-}
-
-.privacy-btn-link {
-  font-size: large;
-  padding: 0 1rem;
-  margin-top: 3.5rem;
-  color: white;
-}
-
-.terms-btn-link {
-  border-left: 2px solid rgba(204, 204, 204, 0.643);
-  font-size: large;
-  padding: 0 1rem;
-  margin-top: 3.5rem;
-  color: white;
-}
-
-.cookies-btn-link {
-  border-left: 2px solid rgba(204, 204, 204, 0.643);
-  font-size: large;
-  padding: 0 1rem;
-  margin-top: 3.5rem;
-  color: white;
-}
-
-.footer__li__copyright-bar__list--item {
-  padding: 0 1rem;
-  margin-top: 3.5rem;
-}
-
-.fixawayParagraph {
-  font-size: large;
-  color: white;
-  margin-top: 3.5rem;
-  margin-left: 1rem;
-  font-family: "Filson Pro", "Arial Narrow", Arial, sans-serif;
-}
-
-.footer__copyright-bar {
-  object-position: center;
-}
-
-.footer {
-  background-image: url(https://fixaway.co/svg/Stripes_with_bottom.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
