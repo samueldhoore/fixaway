@@ -1,14 +1,17 @@
 html {
-  height: 720px;
-  width: 1080px;
   padding: 0;
   border: 0;
   margin: 0;
   }
 
-img {
+.logo {
+  position: absolute;
   height: 50px;
   width: 50px;
+}
+
+.header {
+  
 }
 
 h1 {
@@ -24,6 +27,7 @@ text-align: center;
 }
 
 p {
+font-family: 'Roboto Serif', serif;
 text-align: justify;
 text-align-last: center; 
 }
@@ -38,7 +42,7 @@ justify-content: space-around;
 
 .stripe {
   width: 25px;
-	height: 20px;
+	height: 26px;
 	transform: skew(-50deg);
 	background-color: #FF6633;
   }
