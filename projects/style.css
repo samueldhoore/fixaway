@@ -37,7 +37,7 @@ h1{
     display: inline-block;
     text-align: center;
     font-size: 4rem;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-family:'Oswald', sans-serif;
     font-weight: 900;
     background-color: #ff6633;
     color: #fff;
@@ -63,22 +63,12 @@ h2 {
 
 .Ongoing{
     position: absolute;
-    top: 300px;
-    left: 75px;
+    top: 200px;
+    left: 250px;
     background-color: #FF6633;
     color: #fff;
     z-index: 3;
     font-family: 'Oswald';
-    
-}
-
-.Ongoing1 {
-    position: absolute;
-    top: 300px;
-    left: 75px;
-    background-color: #FF6633;
-    color: #fff;
-    z-index: 3;
     
 }
 
@@ -99,4 +89,3 @@ h2 {
     position: relative;
 
 }
-
