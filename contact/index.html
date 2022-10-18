@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en-En"><head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,16 +25,16 @@
             <a class="home-btn-link" href="https://fixaway.co">Home</a>
           </li>
           <li class="header__list--item-navigation" data-text="About">
-            <a class="about-btn-link" href="#">About</a>
+            <a class="about-btn-link" href="https://fixaway.co/about">About</a>
           </li>
           <li class="header__list--item-navigation" data-text="Projects">
-            <a class="projects-btn-link" href="#">Projects</a>
+            <a class="projects-btn-link" href="https://fixaway.co/projects">Projects</a>
           </li>
           <li class="header__list--item-navigation" data-text="Contacts">
-            <a class="contacts-btn-link" href="#">Contacts</a>
+            <a class="contacts-btn-link" href="https://fixaway.co/contact">Contacts</a>
           </li>
           <li class="header__list--item-navigation" data-text="Login">
-            <a class="header__btn__login" href="#">Log in</a>
+            <a class="header__btn__login" href="https://fixaway.co/login">Log in</a>
           </li>
         </ul>
       </div>
@@ -68,54 +69,54 @@
   </header>
   <!-- <main class="websitelayout"> -->
   <section class="section_reference__primary-section-title">
-    <div class="reference__inner--row">
-      <div class="reference__text-box">
-        <h1 class="reference__primary-section-title">
-          <span class="reference__primary-section-title-main">Fill in the form to fix Antwerp</span>
-        </h1>
-      </div>
-      
-      <table>
-        <tbody><tr class="complaints">
-            <td id="form">
-            <form action="/" method="GET">
-                <div class="formtext">
-                    <input name="name" placeholder="Name*" class="textbox" type="text"> <!-- dirty solution --> <br><br>
-                    <p><input name="surname" class="textbox" type="text" placeholder="Surname*"></p> <!-- dirty solution --> <br>
-                    <p><input name="e-mail" placeholder="e-mail" class="textbox" type="email"></p> <!-- dirty solution --> <br>
-                </div>
-                <div class="formbuttons">
-                    <p>what's the problem?<br> <!-- dirty solution --> <br>
-                    <input type="radio" name="complaint" value="badroad"> bad road <br> <!-- dirty solution --> <br>
-                    <input type="radio" name="complaint" value="inconvenient"> inconvenient roadwork <br> <!-- dirty solution --> <br>
-                    <input type="radio" name="complaint" value="other"> other <!-- dirty solution --> <br><br>
-                    </p>
-                </div>
-                <div class="formtext">
-                    <p>
-                    <textarea class="textbox" name="location" placeholder="location*"></textarea>
-                    </p> <!-- dirty solution --> <br>
-                    <p>
-                    <input class="textbox" type="url" name="url" placeholder="picture link">
-                    </p> <!-- dirty solution --> <br>
-                    <p>
-                    <textarea class="textbox" name="comments" placeholder="comments"></textarea>
-                    </p> <!-- dirty solution --> <br>
-                </div>
-                <div class="formsubmit">
-                    <img src=" https://fixaway.co/svg/Send.svg" id="sendbutton">
-                </div>
-            </form>
-            </td>
-            <td id="pic1">
-                <img class="pic" src="https://dl.dropbox.com/s/o1r478rslu98f1h/Form_image.jpg?dl=1">
-            </td>
-        </tr>
-        
-        </tbody></table>
-
+  <div class="reference__inner--row">
+    <div class="reference__text-box">
+      <h1 class="reference__primary-section-title">
+        <span class="reference__primary-section-title-main">Fill in the form to fix Antwerp</span>
+      </h1>
     </div>
-  </section>
+    
+    <table>
+      <tbody><tr class="complaints">
+          <td id="form">
+          <form action="/" method="GET">
+              <div class="formtext">
+                  <input name="name" placeholder="Name*" class="textbox" type="text"> <!-- dirty solution --> <br><br>
+                  <p><input name="surname" class="textbox" type="text" placeholder="Surname*"></p> <!-- dirty solution --> <br>
+                  <p><input name="e-mail" placeholder="e-mail" class="textbox" type="email"></p> <!-- dirty solution --> <br>
+              </div>
+              <div class="formbuttons">
+                  <p>what's the problem?<br> <!-- dirty solution --> <br>
+                  <input type="radio" name="complaint" value="badroad"> bad road <br> <!-- dirty solution --> <br>
+                  <input type="radio" name="complaint" value="inconvenient"> inconvenient roadwork <br> <!-- dirty solution --> <br>
+                  <input type="radio" name="complaint" value="other"> other <!-- dirty solution --> <br><br>
+                  </p>
+              </div>
+              <div class="formtext">
+                  <p>
+                  <textarea class="textbox" name="location" placeholder="location*"></textarea>
+                  </p> <!-- dirty solution --> <br>
+                  <p>
+                  <input class="textbox" type="url" name="url" placeholder="picture link">
+                  </p> <!-- dirty solution --> <br>
+                  <p>
+                  <textarea class="textbox" name="comments" placeholder="comments"></textarea>
+                  </p> <!-- dirty solution --> <br>
+              </div>
+              <div class="formsubmit">
+                  <img src=" https://fixaway.co/svg/Send.svg" id="sendbutton">
+              </div>
+          </form>
+          </td>
+          <td id="pic1">
+              <img class="pic" src="https://dl.dropbox.com/s/o1r478rslu98f1h/Form_image.jpg?dl=1">
+          </td>
+      </tr>
+      
+      </tbody></table>
+
+  </div>
+</section>
   <section class="information-layout">
     <div class="reference__information">
       <div class="reference__information-container">
@@ -224,44 +225,6 @@
       </div>
     </div>
   </footer>
-<!-- Code injected by live-server -->
-<script>
-// <![CDATA[  <-- For SVG support
-if ('WebSocket' in window) {
-  (function () {
-    function refreshCSS() {
-      var sheets = [].slice.call(document.getElementsByTagName("link"));
-      var head = document.getElementsByTagName("head")[0];
-      for (var i = 0; i < sheets.length; ++i) {
-        var elem = sheets[i];
-        var parent = elem.parentElement || head;
-        parent.removeChild(elem);
-        var rel = elem.rel;
-        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-          var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-          elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-        }
-        parent.appendChild(elem);
-      }
-    }
-    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-    var address = protocol + window.location.host + window.location.pathname + '/ws';
-    var socket = new WebSocket(address);
-    socket.onmessage = function (msg) {
-      if (msg.data == 'reload') window.location.reload();
-      else if (msg.data == 'refreshcss') refreshCSS();
-    };
-    if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-      console.log('Live reload enabled.');
-      sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-    }
-  })();
-}
-else {
-  console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-}
-// ]]>
-</script>
 
 
 </body></html>
