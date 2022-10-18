@@ -1,35 +1,48 @@
 html {
-  height: 1080px;
-  width: 1920px;
+  height: 720px;
+  width: 1080px;
   padding: 0;
   border: 0;
   margin: 0;
   }
+
+img {
+  height: 50px;
+  width: 50px;
+}
+
 h1 {
+font-family: 'Oswald', sans-serif;
 color: #33CCFF;
 text-align: center;
 }
+
 h2 {
+font-family: 'Oswald', sans-serif;
 color: #FF6633;
 text-align: center;
 }
+
 p {
 text-align: justify;
 text-align-last: center; 
 }
+
 nav {
+font-family: 'Roboto Serif', serif;
 background-color: #FF6633;
 text-align: center;
 display: flex;
 justify-content: space-around;
 }
-a { color: white; }
+
 .stripe {
   width: 25px;
 	height: 20px;
 	transform: skew(-50deg);
 	background-color: #FF6633;
   }
+  
 .stripes {
   display: flex;
   justify-content: space-around;
@@ -58,8 +71,15 @@ a:active {
   background-color: white;
   text-decoration: underline;
 }
+
 u {
+  font-family: 'Oswald', sans-serif;
   color: #FF6633;
   text-decoration: underline;
   font-weight: bold;
+}
+
+.fixaway {
+  color: white;
+  background-color: #FF6633;
 }
