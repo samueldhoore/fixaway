@@ -1,0 +1,82 @@
+* { /* reset van de site */
+    
+    box-sizing: inherit; 
+}
+
+body {
+    /*! background-color: rgb(224, 210, 210); */
+    font-family: helvetica neue;
+    font-size: 1rem;
+    /* reset van de site, verwijder stomme padding */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img#logo {
+    /* width: 71px; */
+    height: 4.5rem;
+    position: absolute;
+}
+
+img#banner {
+    height: 4.5rem;
+} 
+
+h1 {
+    color: #FF6633;
+    font-family: impact;
+    font-size: 3rem;
+}
+
+article {
+    margin:10px auto;
+    width:960px;
+    padding:10px;
+    text-align: center;
+}
+
+tr.complaints {
+    align-content: center;
+}
+
+td#form {
+    width: 18rem;
+    vertical-align: top;
+}
+
+.textbox {
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    border:solid 1px #33CCFF;
+    font-family: helvetica neue;
+    font-size: 1rem;
+}
+
+.formbuttons {
+    display: inline-block;
+    text-align: left;
+}
+
+#sendbutton {
+    width: 5rem;
+    padding-left: 1rem;
+}
+
+#submit-complaint {
+    padding: 10px;
+}
+
+td#pic1 {
+    padding-left: 3rem;
+}
+
+img.pic {
+    width:100%;
+}
+
+section {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px auto;
+}
