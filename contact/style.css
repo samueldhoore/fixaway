@@ -1,0 +1,551 @@
+/*******************************************************************/
+/*   SAMUEL EDIT     */
+/*******************************************************************/
+
+.textbox,
+.formbuttons  {
+  /* background-color: blue;*/
+  font-size: large;
+}
+
+table {
+  margin:10px auto;
+  width:1000px;
+  padding:10px;
+  text-align: center;
+}
+
+tr.complaints {
+  align-content: center;
+}
+
+/* Left Table */
+
+td#form {
+  width: 25rem;
+  vertical-align: top;
+}
+
+.textbox {
+  width: 100%;
+  padding: 10px 0px 10px 10px;
+  border:solid 2px #33CCFF;
+  font-family: "Filson Pro", "Arial Narrow", Arial, sans-serif;
+}
+
+.formbuttons {
+  display: inline-block;
+  text-align: left;
+  font-family: "Filson Pro", "Arial Narrow", Arial, sans-serif;
+}
+
+#sendbutton {
+  width: 8rem;
+  padding-left: 1rem;
+}
+
+#submit-complaint {
+  padding: 10px;
+}
+
+/* Right Table */
+
+td#pic1 {
+  padding-left: 3rem;
+}
+
+img.pic {
+  width:100%;
+}
+
+section {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  margin: 10px auto;
+}
+
+
+/*******************************************************************/
+/*      Typography       */
+/*******************************************************************/
+
+@font-face {
+  font-family: "Impact";
+  src: url(fonts/Impact-Font/impact.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Impacted";
+  src: url(fonts/Impact-Font/Impacted.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Unicode Impact";
+  src: url(fonts/Impact-Font/unicode.impact.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Filson Pro";
+  src: url(fonts/filson-pro-fonts/FilsonProRegular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*******************************************************************/
+/*      Typography       */
+/*******************************************************************/
+
+@font-face {
+  font-family: "Impact";
+  src: url(fonts/Impact-Font/impact.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Impacted";
+  src: url(fonts/Impact-Font/Impacted.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Unicode Impact";
+  src: url(fonts/Impact-Font/unicode.impact.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Filson Pro";
+  src: url(fonts/filson-pro-fonts/FilsonProRegular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*******************************************************************/
+/*      General Style       */
+/*******************************************************************/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-weight: 300;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 56.25em) {
+  body {
+    padding: 0;
+  }
+}
+
+/*******************************************************************/
+/*      Header      */
+/*******************************************************************/
+
+.o-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+  background-image: url(https://fixaway.co/svg/Stripes_with_bottom.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.f-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 9rem;
+  height: auto;
+  z-index: 45;
+}
+
+.header__accessibility__lang-switcher {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  object-position: center;
+  margin-right: 3rem;
+  margin-top: 4rem;
+}
+
+.header__accessibility__lang-switcher-item {
+  display: block;
+  box-sizing: border-box;
+  float: none;
+  text-decoration: none;
+  line-height: 2.4rem;
+  position: relative;
+  z-index: 11;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header__btn__login {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1rem;
+  line-height: 0.875rem;
+  font-size: large;
+  font-family: "Filson Pro", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.header__navmenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  border: none;
+}
+
+.home-btn-link,
+.about-btn-link,
+.contacts-btn-link,
+.projects-btn-link {
+  font-family: "Filson Pro", "Arial Narrow", Arial, sans-serif;
+  color: #fff;
+  font-size: large;
+  font-weight: bold;
+}
+
+.language-link-dutch,
+.language-link-english,
+.language-link-german,
+.language-link-french {
+  font-family: "Impact", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+  font-weight: normal;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navigation {
+  flex-grow: 1;
+  list-style: none;
+}
+
+.header__list--item-navigation {
+  padding: 1rem 5rem;
+  margin-top: 4rem;
+}
+
+.header__list--item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 10rem;
+  margin-right: 1.5rem;
+  list-style-type: none;
+}
+
+/*******************************************************************/
+/*      Section 1       */
+/*******************************************************************/
+
+.reference__primary-section-title {
+  margin-bottom: 4rem;
+}
+
+.reference__inner--row {
+  text-align: center;
+}
+
+.reference__primary-section-title-main {
+  display: inline-block;
+  text-align: center;
+  font-size: 4rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 900;
+  background-color: #ff6633;
+  color: #fff;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  animation-name: moveInLeft;
+  animation: 1s ease-out;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .reference__primary-section-title-main {
+    font-size: 3rem;
+  }
+}
+
+.reference__primary-section-title-sub {
+  display: block;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #33ccff;
+  letter-spacing: 0.1rem;
+  animation-name: moveInRight;
+  animation: 1s ease-out;
+}
+@media only screen and (max-width: 56.25em) {
+  .reference__primary-section-title-sub {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .reference__primary-section-title-sub {
+    letter-spacing: 0.5rem;
+    font-size: 2rem;
+  }
+}
+
+.section_reference__primary-section-title {
+  margin-top: 1rem;
+  object-fit: contain;
+}
+
+.reference__images {
+  object-fit: inherit;
+  display: inline-block;
+}
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+.reference__image-container {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center;
+  overflow: hidden;
+  align-items: center;
+  column-width: cover; */
+  /* width: 100vh;
+  height: 35vh; */
+  /* margin: 0 auto; */
+  /* margin-bottom: 4rem;
+  border-style: solid;
+  border-color: coral;
+  padding: 0 4rem; */
+}
+
+/* @media only screen and (max-width: 48rem) {
+  .reference__image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    padding: 1rem;
+  }
+} */
+
+.images {
+  padding: 5rem 1rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.information-layout {
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  text-align: center;
+}
+
+.reference__information {
+  object-fit: inherit;
+  object-position: center;
+  display: inline-block;
+  margin: 0 4rem;
+}
+
+.information-layout .reference__information-container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 3rem;
+  padding: 1rem;
+  margin-left: 15%;
+  margin-right: 28%;
+}
+
+.features-icon {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1.5rem;
+}
+
+.needsMoreAttention {
+  width: 6rem;
+  height: 4rem;
+  margin-right: 1.5rem;
+}
+
+@media only screen and (min-width: 56.25em) {
+  .features-icon {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1.5rem;
+  }
+  .needsMoreAttention {
+    width: 6rem;
+    height: 4rem;
+    margin-right: 1.5rem;
+  }
+}
+@media only screen and (min-width: 37.5em) {
+  .features-icon {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1.5rem;
+  }
+  .needsMoreAttention {
+    width: 6rem;
+    height: 4rem;
+    margin-right: 1.5rem;
+  }
+}
+
+.information-container-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  /* position: relative;
+  text-align: center; */
+}
+
+.information-container-flex-paragraph {
+  font-size: large;
+  font-family: "Filson Pro", "Arial Narrow", Arial, sans-serif;
+  text-align: left;
+  margin-left: 2rem;
+}
+
+.fix {
+  font-size: x-large;
+  font-family: "Filson Pro", "Arial Narrow", Arial, sans-serif;
+  margin-top: 10rem;
+  margin-bottom: 15rem;
+}
+
+.colorRed {
+  color: #ff6633;
+  text-decoration: underline;
+}
+
+.copyright-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+  padding: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 0.4rem;
+  z-index: auto;
+}
+
+.footer__copyright-bar__list--item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 1.5rem;
+  list-style-type: none;
+  color: white;
+  font-family: "Filson Pro", "Arial Narrow", Arial, sans-serif;
+}
+
+.footer-btn-link {
+  color: white;
+}
+
+.privacy-btn-link {
+  font-size: large;
+  padding: 0 1rem;
+  margin-top: 3.5rem;
+  color: white;
+}
+
+.terms-btn-link {
+  border-left: 2px solid rgba(204, 204, 204, 0.643);
+  font-size: large;
+  padding: 0 1rem;
+  margin-top: 3.5rem;
+  color: white;
+}
+
+.cookies-btn-link {
+  border-left: 2px solid rgba(204, 204, 204, 0.643);
+  font-size: large;
+  padding: 0 1rem;
+  margin-top: 3.5rem;
+  color: white;
+}
+
+.footer__li__copyright-bar__list--item {
+  padding: 0 1rem;
+  margin-top: 3.5rem;
+}
+
+.fixawayParagraph {
+  font-size: large;
+  color: white;
+  margin-top: 3.5rem;
+  margin-left: 1rem;
+  font-family: "Filson Pro", "Arial Narrow", Arial, sans-serif;
+}
+
+.footer__copyright-bar {
+  object-position: center;
+}
+
+.footer {
+  background-image: url(https://fixaway.co/svg/Stripes_with_bottom.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
