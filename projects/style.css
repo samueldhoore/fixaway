@@ -243,17 +243,17 @@ h2 {
     margin-left: 2rem;
   }
   
-  .fix {
-    font-size: x-large;
-    font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
-    margin-top: 10rem;
-    margin-bottom: 15rem;
-  }
-  
-  .colorRed {
-    color: #ff6633;
-    text-decoration: underline;
-  }
+.fix {
+  font-size: large;
+  font-family: "Roboto Serif", serif;
+  margin-top: 10rem;
+  margin-bottom: 15rem;
+}
+
+.colorRed {
+  color: #ff6633;
+  text-decoration: underline;
+}
   
   .copyright-bar {
     display: flex;
