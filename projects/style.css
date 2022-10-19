@@ -1,138 +1,154 @@
-*{
-    margin: 0;
-    padding: 0%;
-    box-sizing: border-box;
-} 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-family: "Roboto Serif", serif;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+}
+
 
 /***** header *****/
 
 .o-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10rem;
-    background-image: url(https://fixaway.co/svg/Stripes_with_bottom.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    box-sizing: border-box;
-  }
-  
-  .f-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 11rem;
-    /* position: fixed; */
-    height: auto;
-    z-index: 45;
-  }
-  
-  .header__accessibility__lang-switcher {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    object-position: center;
-    margin-right: 3rem;
-    margin-top: 6rem;
-  }
-  
-  .header__accessibility__lang-switcher-item {
-    display: block;
-    box-sizing: border-box;
-    float: none;
-    text-decoration: none;
-    line-height: 2.4rem;
-    position: relative;
-    z-index: 11;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  /* .header__btn__login {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 1rem;
-    line-height: 0.875rem;
-    font-size: large;
-    font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
-    font-weight: bold;
-    color: white;
-    cursor: pointer;
-  } */
-  
-  .header__navmenu {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-decoration: none;
-    margin-top: 0.5rem;
-    border: none;
-    content: ;
-  }
-  
-  .home-btn-link,
-  .about-btn-link,
-  .contacts-btn-link,
-  .projects-btn-link,
-  .login-btn-link {
-    font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
-    color: #fff;
-    font-size: large;
-    font-weight: bold;
-    overflow: hidden;
-  }
-  
-  .language-link-dutch,
-  .language-link-english,
-  .language-link-german,
-  .language-link-french {
-    font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
-    font-size: large;
-    font-weight: normal;
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  /* .navigation {
-    flex-grow: 1;
-    list-style: none;
-  } */
-  
-  .header__list--item-navigation {
-    padding: 1rem 5rem;
-    margin-top: 4rem;
-  }
-  
-  .header__list--item {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    /* margin-left: 10rem;
-    margin-right: 1.5rem; */
-    list-style-type: none;
-  }
-  
-  .navigationContainer {
-    box-sizing: border-box;
-  }
-  
-  ul a {
-    /* padding: 0.5rem 0.5rem; */
-  }
-  
-  ul:hover a:hover {
-    display: block;
-    background-color: #fff;
-    color: #ff6633;
-    /* padding: 0.5rem 0.5rem; */
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+  background-image: url(https://fixaway.co/svg/Stripes_with_bottom.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+.f-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 11rem;
+  /* position: fixed; */
+  height: auto;
+  z-index: 45;
+}
+
+.header__accessibility__lang-switcher {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  object-position: center;
+  margin-right: 3rem;
+  margin-top: 6rem;
+}
+
+.header__accessibility__lang-switcher-item {
+  display: block;
+  box-sizing: border-box;
+  float: none;
+  text-decoration: none;
+  line-height: 2.4rem;
+  position: relative;
+  z-index: 11;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* .header__btn__login {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1rem;
+  line-height: 0.875rem;
+  font-size: large;
+  font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+} */
+
+.header__navmenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  border: none;
+  content: ;
+}
+
+.home-btn-link,
+.about-btn-link,
+.contacts-btn-link,
+.projects-btn-link,
+.login-btn-link {
+  font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+  color: #fff;
+  font-size: large;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.language-link-dutch,
+.language-link-english,
+.language-link-german,
+.language-link-french {
+  font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+  font-weight: normal;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* .navigation {
+  flex-grow: 1;
+  list-style: none;
+} */
+
+.header__list--item-navigation {
+  padding: 1rem 5rem;
+  margin-top: 4rem;
+}
+
+.header__list--item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  /* margin-left: 10rem;
+  margin-right: 1.5rem; */
+  list-style-type: none;
+}
+
+.navigationContainer {
+  box-sizing: border-box;
+}
+
+ul a {
+  /* padding: 0.5rem 0.5rem; */
+}
+
+ul:hover a:hover {
+  display: block;
+  background-color: #fff;
+  color: #ff6633;
+  /* padding: 0.5rem 0.5rem; */
+}
+
 
 
 
@@ -243,17 +259,17 @@ h2 {
     margin-left: 2rem;
   }
   
-.fix {
-  font-size: large;
-  font-family: "Roboto Serif", serif;
-  margin-top: 10rem;
-  margin-bottom: 15rem;
-}
-
-.colorRed {
-  color: #ff6633;
-  text-decoration: underline;
-}
+  .fix {
+    font-size: x-large;
+    font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+  }
+  
+  .colorRed {
+    color: #ff6633;
+    text-decoration: underline;
+  }
   
   .copyright-bar {
     display: flex;
