@@ -150,7 +150,38 @@ ul:hover a:hover {
 }
 
 
+.reference__primary-section-title-main {
+  display: inline-block;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 900;
+  background-color: #ff6633;
+  color: #fff;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem 1.5rem;
+  animation-name: moveInLeft;
+  animation: 1s ease-out;
+}
 
+/* @media only screen and (max-width: 37.5em) {
+  .reference__primary-section-title-main {
+    font-size: 3rem;
+  }
+} */
+
+.reference__primary-section-title-sub {
+  display: block;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #33ccff;
+  letter-spacing: 0.1rem;
+  animation-name: moveInRight;
+  animation: 1s ease-out;
+}
 
 /***** section positioning *****/
 
