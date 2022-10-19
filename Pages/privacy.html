@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-En">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,14 +7,35 @@
     <meta name="Mobile-web-app-capable" content="yes" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="privacy.css" />
-    <title>Privacy</title>
+    <title>Privacy | fixAway</title>
+    <link
+      rel="icon"
+      href="https://dl.dropbox.com/s/camshsyalksi27j/Logo.png?dl=1"
+      type="image/icon"
+    />
   </head>
   <body>
+
+<!--  * header *-->
     <header class="o-header">
-      <div class="header__accessibility__lang-switcher">
+
+<!--      * Logo * -->
+      <div class="mainLogo">
         <div class="header__logo">
-          <a href="https://fixaway.co" class="header__logo">
+          <a href="http://127.0.0.1:5500/index.html" class="header__logo">
             <img
               class="f-logo"
               src="https://dl.dropbox.com/s/6m88wd1xmy706zx/Logo%20Lesley%20Netten.png?dl=1"
@@ -24,11 +45,14 @@
           </a>
         </div>
       </div>
-      <div class="header__navmenu">
-        <div class="navigation">
+
+      <!--      * Home Menu and Language Navigation * -->
+<!--      * Home Menu Navigation * -->
+      <div class="navigationContainer">
+        <div class="header__navmenu">
           <ul class="header__list--item">
             <li class="header__list--item-navigation" data-text="Home">
-              <a class="home-btn-link" href="https://fixaway.co">Home</a>
+              <a class="home-btn-link" href="https://fixaway.co/">Home</a>
             </li>
             <li class="header__list--item-navigation" data-text="About">
               <a class="about-btn-link" href="#">About</a>
@@ -40,73 +64,78 @@
               <a class="contacts-btn-link" href="#">Contacts</a>
             </li>
             <li class="header__list--item-navigation" data-text="Login">
-              <a class="header__btn__login" href="#">Log in</a>
+              <a class="login-btn-link" href="#">Login</a>
             </li>
           </ul>
-        </div>
-        <div class="accessibility">
-          <ul class="header__accessibility__lang-switcher">
-            <li class="header__accessibility__lang-switcher-item">
-              <a class="language-link-dutch is-active" href="#" hreflang="en"
-                >NL</a
-              >
-            </li>
 
-            <li class="header__accessibility__lang-switcher-item">
-              <a
-                class="language-link-english is-active"
-                href="http://127.0.0.1:5500/index.html"
-                hreflang="en"
-                >EN</a
-              >
-            </li>
+<!--          * Language Navigation * -->
+          <div class="accessibility">
+            <ul class="header__accessibility__lang-switcher">
+              <li class="header__accessibility__lang-switcher-item">
+                <a class="language-link-dutch" href="#" hreflang="en">NL</a>
+              </li>
 
-            <li class="header__accessibility__lang-switcher-item">
-              <a class="language-link-french is-active" href="#" hreflang="en"
-                >FR</a
-              >
-            </li>
+              <li class="header__accessibility__lang-switcher-item">
+                <a
+                  class="language-link-english is-active"
+                  href="http://127.0.0.1:5500/index.html"
+                  hreflang="en"
+                  ><span style="color: #33ccff">EN</span></a
+                >
+              </li>
 
-            <li class="header__accessibility__lang-switcher-item">
-              <a class="language-link-german is-active" href="#" hreflang="en"
-                >DE</a
-              >
-            </li>
-          </ul>
+              <li class="header__accessibility__lang-switcher-item">
+                <a class="language-link-french is-active" href="#" hreflang="en"
+                  >FR</a
+                >
+              </li>
+
+              <li class="header__accessibility__lang-switcher-item">
+                <a class="language-link-german is-active" href="#" hreflang="en"
+                  >DE</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
 
+<!-- * body * -->
+<!-- * main body content * -->
     <main class="mainSection">
       <section>
         <h4 class="homePolicy">
-          <a href="https://fixaway.co"><span style="color: #ff6633">Home</span></a> / Privacy policy
+          <a href="https://fixaway.co/"
+            ><span style="color: #ff6633">Home</span></a
+          >
+          / Privacy policy
         </h4>
         <h1 class="aboutOurPrivacy">About our privacy</h1>
-        <p>
+        <p class="bodyParagraph">
           When processing personal data related to the usage of our website,
           FixAway places a high priority on protecting your privacy.
         </p>
 
-        <p>
+        <p class="bodyParagraph">
           FixAway considers it essential that its services be accessible at all
           time and from any place. fixAway would also want to give interactive
           services and solutions that are tailored to your particular needs.
         </p>
 
-        <p>
+        <p class="bodyParagraph">
           We would need to collect and utilize certain personal information for
           this purpose.
         </p>
 
-        <p>
+        <p class="bodyParagraph">
           FixAway puts a premium on the protection of your privacy and personal
           information in this aspect.This is why we have established this
           privacy statement: to make it very obvious what personal information
         </p>
 
         <h1>Personal data we collect</h1>
-        <p>
+        <p class="bodyParagraph">
           What use does fixAway serve in collecting individual details? The
           information FixAway gathers about its customers helps the company
           tailor its services to their needs. We value the ability to provide
@@ -117,7 +146,7 @@
           information we collect about you.
         </p>
 
-        <p>
+        <p class="bodyParagraph">
           fixAway operates this website, which provides the SERVICES you are
           using. This page is used to inform website visitors regarding our
           policies regarding the collection, use, and disclosure of Personal
@@ -128,85 +157,87 @@
           Privacy Policy. The terms used in this Privacy Policy have the same
           meanings as in our Terms and Conditions, which are accessible at
           fixAway.co, unless otherwise defined in this Privacy Policy.
-          
-          
-          <h1>Information Collection and Use</h1> 
-          For a better experience, while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to your name,
-          phone number, and postal address. The information that we collect will
-          be used to contact or identify you. 
-          
-          <h1>Log Data</h1>
-          We want to inform you
-          that whenever you visit our Service, we collect information that your
-          browser sends to us, called Log Data. This Log Data may include
-          information such as your computer's Internet Protocol ("IP") address,
-          browser version, pages of our Service that you visit, the time and
-          date of your visit, the time spent on those pages, and other
-          statistics. 
-          
-          
-          <h1>Cookies</h1> 
-          Cookies are files with a small amount of data
-          commonly used as a unique anonymous identifier. These are sent to your
-          browser from the website you visit and stored on your computer's hard
-          drive. Our website uses these "cookies" to collect information and to
-          improve our Service. You can either accept or refuse these cookies and
-          know when a cookie is being sent to your computer. If you decline our
-          cookies, you may not be able to use some portions of our Service.
-          
-          
-          <h1>Service Providers</h1>
-          We may employ third-party companies and individuals
-          due to the following reasons: 
-          
-          <ul>
-            <li>To facilitate our Service;</li> 
-            <li>To provide the Service on our behalf;</li> 
-            <li>To perform Service-related services; or</li>  
-            <li>To assist us in analyzing how our Service is used.</li>  
+        </p>
+
+        <h1>Information Collection and Use</h1>
+        <p class="bodyParagraph">
+          For a better experience, while using our Service, we may require you
+          to provide us with certain personally identifiable information,
+          including but not limited to your name, phone number, and postal
+          address. The information that we collect will be used to contact or
+          identify you.
+        </p>
+
+        <h1>Log Data</h1>
+        <p class="bodyParagraph">
+          We want to inform you that whenever you visit our Service, we collect
+          information that your browser sends to us, called Log Data. This Log
+          Data may include information such as your computer's Internet Protocol
+          ("IP") address, browser version, pages of our Service that you visit,
+          the time and date of your visit, the time spent on those pages, and
+          other statistics.
+        </p>
+
+        <h1>Service Providers</h1>
+        <p class="bodyParagraph">
+          We may employ third-party companies and individuals due to the
+          following reasons:
+        </p>
+
+        <ul class="listitemsServiceProvider">
+          <li>To facilitate our Service;</li>
+          <li>To provide the Service on our behalf;</li>
+          <li>To perform Service-related services; or</li>
+          <li>To assist us in analyzing how our Service is used.</li>
         </ul>
-            We want to inform our Service users that these third parties have access to your Personal
+        <p class="bodyParagraph">
+          We want to inform our Service users that these third parties have
+          access to your Personal
+        </p>
+        <p class="bodyParagraph">
           Information. The reason is to perform the tasks assigned to them on
           our behalf. However, they are obligated not to disclose or use the
-          information for any other purpose. 
-          
-          
-          <h1>security</h1> 
-          value your trust in
-          providing us with your Personal Information. Thus we are striving to
-          use commercially acceptable means of protecting it. But remember that
-          no method of transmission over the internet or method of electronic
-          storage is 100% secure and reliable, and we cannot guarantee its
-          absolute security. 
-          
-          
-          <h1>Links to Other Sites</h1> Our Service may contain links
-          to other sites. You will be directed to that site if you click on a
-          third-party link. Note that we do not operate these external sites.
-          Therefore, we strongly advise you to review the Privacy Policy of
-          these websites. We have no control over and assume no responsibility
-          for the content, privacy policies, or practices of any third-party
-          sites or services. 
-          
-          <h1> Children's Privacy </h1> Our Services do not address
-          anyone under the age of 13. We do not knowingly collect personally
-          identifiable information from children under 13. If we discover that a
-          child under 13 has provided us with personal information, we
-          immediately delete this from our servers. If you are a parent or
-          guardian and you know that your child has provided us with personal
-          information, don't hesitate to contact us so we can take the necessary
-          actions. 
-          
-          <h1>Changes to This Privacy Policy</h1>  We may update our Privacy
-          Policy from time to time. Thus, we advise you to review this page
-          periodically for any changes. We will notify you of any changes by
-          posting the new Privacy Policy on this page. These changes are
-          effective immediately after they are posted on this page. Contact Us
-          If you have any questions or suggestions about our Privacy Policy, do
-          not hesitate to contact us.
+          information for any other purpose.
+        </p>
+
+        <h1>Security</h1>
+        <p class="bodyParagraph">
+          We value your trust in providing us with your Personal Information. Thus,
+          we are striving to use commercially acceptable means of protecting it.
+          But remember that no method of transmission over the internet or
+          method of electronic storage is 100% secure and reliable, and we
+          cannot guarantee its absolute security.
+        </p>
+
+        <h1>Links to Other Sites</h1>
+        <p class="bodyParagraph">
+          Our Service may contain links to other sites. You will be directed to
+          that site if you click on a third-party link. Note that we do not
+          operate these external sites. Therefore, we strongly advise you to
+          review the Privacy Policy of these websites. We have no control over
+          and assume no responsibility for the content, privacy policies, or
+          practices of any third-party sites or services.
+        </p>
+
+        <h1>Children's Privacy</h1>
+        <p class="bodyParagraph">
+          Our Services do not address anyone under the age of 13. We do not
+          knowingly collect personally identifiable information from children
+          under 13. If we discover that a child under 13 has provided us with
+          personal information, we immediately delete this from our servers. If
+          you are a parent or guardian and you know that your child has provided
+          us with personal information, don't hesitate to contact us so we can
+          take the necessary actions.
+        </p>
+
+        <h1>Changes to This Privacy Policy</h1>
+        <p class="bodyParagraph">
+          We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page. Do not hesitate to contact Us if you have any questions or suggestions about our Privacy Policy.
         </p>
       </section>
     </main>
+
+<!-- * footer * -->
     <footer class="footer">
       <div class="footer__copyright-bar">
         <div class="copyright-bar">
@@ -219,7 +250,7 @@
               class="footer__li__copyright-bar__list--item"
               data-text="Privacy"
             >
-              <a class="privacy-btn-link" href="#">Privacy</a>
+              <a class="privacy-btn-link" href="Pages/privacy.html">Privacy</a>
             </li>
             <li class="footer__li__copyright-bar__list--item" data-text="Terms">
               <a class="terms-btn-link" href="#">Terms</a>
