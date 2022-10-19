@@ -236,23 +236,22 @@ text-align: center;
   width: 35px;
   height: 35px;
 }
-
 .img3{
   width: 35px;
   height: 35px;
 }
 
 .main{
-  text-align: center;
   padding: 5rem 20rem 5rem 20rem;
+  margin: 0 auto;
   min-width: 400px;
   max-width: 700px;
+  text-align: justify;
+  text-align-last: center;
 }
 
 p {
 font-family: 'Roboto Serif', serif;
-text-align: justify;
-text-align-last: center;
 }
 
 .fixaway {
