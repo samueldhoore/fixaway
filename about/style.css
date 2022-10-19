@@ -72,7 +72,7 @@ body {
   margin: 0;
   padding: 0;
   font-weight: 300;
-  font-family: "Roboto Serif", serif;
+  font-family: 'Roboto Serif', serif;
   font-size: 1.5rem;
   box-sizing: border-box;
 }
@@ -160,7 +160,7 @@ a {
 .contacts-btn-link,
 .projects-btn-link,
 .login-btn-link {
-  font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+  font-family: 'Roboto Serif', serif;
   color: #fff;
   font-size: large;
   font-weight: bold;
@@ -171,7 +171,7 @@ a {
 .language-link-english,
 .language-link-german,
 .language-link-french {
-  font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: large;
   font-weight: normal;
   text-decoration: none;
@@ -262,8 +262,8 @@ text-align-last: center;
 
 /* Pious' code*/
 .fix {
-  font-size: x-large;
-  font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+  font-family: "Roboto Serif", serif;
   margin-top: 10rem;
   margin-bottom: 15rem;
 }
@@ -295,7 +295,7 @@ text-align-last: center;
   margin-bottom: auto;
   list-style-type: none;
   color: white;
-  font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+  font-family: "Roboto Serif", serif;
 }
 
 .footer-btn-link {
@@ -340,7 +340,7 @@ text-align-last: center;
   margin-top: 5.5rem;
   margin-left: 1rem;
   /* margin-bottom: auto; */
-  font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+  font-family: "Roboto Serif", serif;
 }
 
 .footer__copyright-bar {
