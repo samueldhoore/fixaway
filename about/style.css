@@ -260,6 +260,18 @@ text-align-last: center;
 }
 
 /* Pious' code*/
+.fix {
+  font-size: x-large;
+  font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+  margin-top: 10rem;
+  margin-bottom: 15rem;
+}
+
+.colorRed {
+  color: #ff6633;
+  text-decoration: underline;
+}
+
 .copyright-bar {
   display: flex;
   flex-direction: row;
