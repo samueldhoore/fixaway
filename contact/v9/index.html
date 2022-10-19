@@ -103,11 +103,11 @@
   <table>
     <tbody><tr class="complaints">
         <td id="form">
-        <form action="/" method="GET">
+        <form action="http://fixaway.co/projects" method="POST">
             <div class="formtext">
-                <input name="name" class="textbox" type="text" placeholder="Name *"> <!-- dirty solution --> <br>
-                <p><input name="surname" class="textbox" type="text" placeholder="Surname *"></p> <!-- dirty solution --> 
-                <p><input name="e-mail" class="textbox" type="email" placeholder="e-mail *"></p> <!-- dirty solution --> 
+                <input name="name" class="textbox" type="text" placeholder="Name *" required=""> <!-- dirty solution --> <br>
+                <p><input name="surname" class="textbox" type="text" placeholder="Surname *" required=""></p> <!-- dirty solution --> 
+                <p><input name="e-mail" class="textbox" type="email" placeholder="e-mail *" required=""></p> <!-- dirty solution --> 
             </div>
             <div class="formbuttons">
                 <p><span style="padding-bottom: 0.5rem;display: inline-block;">WHAT'S THE PROBLEM?</span><br> <!-- dirty solution --> 
@@ -117,7 +117,17 @@
                   </span></p>
             </div>
             <div class="formtext">
-  <img class="" src="https://fixaway.co/svg/Upload_images.svg" style="width: 75%;">
+  
+  
+
+<div class="image-upload">
+  <label for="file-input">
+  <img src="https://fixaway.co/svg/Upload_images.svg" style="width: 75%;cursor: pointer;">
+  </label>
+
+  <input id="file-input" type="file" class="hide-button">
+</div>
+  
                 <p>
                 <textarea class="textbox" name="location" placeholder="location *"></textarea>
                 </p> <!-- dirty solution --> 
@@ -130,7 +140,11 @@
                 </p> <!-- dirty solution --> 
             </div>
             <div class="formsubmit">
-                <a href="https://fixaway.co/projects/" onclick="return complaint();"><img src=" https://fixaway.co/svg/Send.svg" id="sendbutton"></a>
+  <label for="sendbutton1">
+  <img src=" https://fixaway.co/svg/Send.svg" style="cursor: pointer;" onclick="return complaint();" id="sendbutton">
+  </label>
+                
+   <input type="submit" value="SEND" id="sendbutton1" class="hide-button">
             </div>
         </form>
         </td>
@@ -167,18 +181,18 @@
 </div></td>
   
         <td id="form2"><div class="contact-bottom">
-        <form action="/" method="GET">
+        <form action="http://fixaway.co/projects" method="POST">
             <div class="formtext-contact">
-                <input name="name-contact" class="textbox-contact" type="text" placeholder="Name *"> <!-- dirty solution --> <br>
-                <p><input name="surname-contact" class="textbox-contact" type="text" placeholder="Surname *"></p> <!-- dirty solution --> 
-                <p><input name="e-mail-contact" class="textbox-contact" type="email" placeholder="e-mail *"></p> <!-- dirty solution --> 
+                <input name="name-contact" class="textbox-contact" type="text" placeholder="Name *" required=""> <!-- dirty solution --> <br>
+                <p><input name="surname-contact" class="textbox-contact" type="text" placeholder="Surname *" required=""></p> <!-- dirty solution --> 
+                <p><input name="e-mail-contact" class="textbox-contact" type="email" placeholder="e-mail *" required=""></p> <!-- dirty solution --> 
             </div>
             
             <div class="formtext" style="display: flex;justify-content: space-between;">
                  
                   
                 
-                <p style="margin: 0;"><textarea class="textbox-contact" name="comments-contact" style="" placeholder="message *"></textarea></p>
+                <p style="margin: 0;"><textarea class="textbox-contact" name="comments-contact" style="" placeholder="message *" required=""></textarea></p>
                 
                    
                       
@@ -218,6 +232,7 @@
   </footer>
 
   <script src="form.js" async=""></script>
+  <script src="upload.js" async=""></script>
 
 
 <!-- Code injected by live-server -->
@@ -259,6 +274,158 @@
 	// ]]>
 </script>
 <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<style type="text/css"></style><!-- Code injected by live-server -->
 <script>
 	// <![CDATA[  <-- For SVG support
 	if ('WebSocket' in window) {

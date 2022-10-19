@@ -121,6 +121,11 @@ img#sendbutton-contact {
   /*! height: 6rem; */
 }
 
+/* Hide ugly buttons, show pretty ones */
+.hide-button {
+  display: none;
+}
+
 /*******************************************************************/
 /*   PIOUS CODE     */
 /*******************************************************************/
