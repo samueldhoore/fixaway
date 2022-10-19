@@ -402,6 +402,11 @@ ul:hover a:hover {
   text-decoration: underline;
 }
 
+/*******************************************************************/
+/*      footer      */
+/*******************************************************************/
+
+
 .copyright-bar {
   display: flex;
   flex-direction: row;
