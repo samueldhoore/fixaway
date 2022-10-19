@@ -1,0 +1,325 @@
+/*******************************************************************/
+/*      Typography       */
+/*******************************************************************/
+
+/*@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900&display=swap");*/
+/*@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");*/
+
+/*font-family: "Roboto Serif", serif;*/
+/*font-family: "Oswald", sans-serif;*/
+
+/*******************************************************************/
+/*      General Style       */
+/*******************************************************************/
+
+/**,*/
+/**::after,*/
+/**::before {*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*  box-sizing: inherit;*/
+/*}*/
+
+
+/* @media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+} */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    font-family: "Roboto Serif", serif;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    line-height: 2.5rem;
+}
+
+.mainSection {
+    padding: 20rem;
+}
+/* @media only screen and (max-width: 56.25em) {
+  body {
+    padding: 0;
+  }
+} */
+
+/*******************************************************************/
+/*      Header      */
+/*******************************************************************/
+
+.o-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+    background-image: url(https://fixaway.co/svg/Stripes_with_bottom.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.f-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 11rem;
+    height: auto;
+    z-index: 45;
+}
+
+.header__accessibility__lang-switcher {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    object-position: center;
+    margin-right: 3rem;
+    margin-top: 6rem;
+}
+
+.header__accessibility__lang-switcher-item {
+    display: block;
+    box-sizing: border-box;
+    float: none;
+    text-decoration: none;
+    line-height: 2.4rem;
+    position: relative;
+    z-index: 11;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header__navmenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    border: none;
+}
+
+.home-btn-link,
+.about-btn-link,
+.contacts-btn-link,
+.projects-btn-link,
+.login-btn-link {
+    font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+    color: #fff;
+    font-size: large;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.language-link-dutch,
+.language-link-english,
+.language-link-german,
+.language-link-french {
+    font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+    font-size: large;
+    font-weight: normal;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header__list--item-navigation {
+    padding: 1rem 5rem;
+    margin-top: 4rem;
+}
+
+.header__list--item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navigationContainer {
+    box-sizing: border-box;
+}
+
+ul a {
+    /* padding: 0.5rem 0.5rem; */
+}
+
+ul:hover a:hover {
+    display: block;
+    background-color: #fff;
+    color: #ff6633;
+    /* padding: 0.5rem 0.5rem; */
+}
+
+
+/*******************************************************************/
+/*      body content     */
+/*******************************************************************/
+
+.homePolicy {
+    font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+    font-size: 2rem;
+}
+
+.aboutOurPrivacy {
+    margin-top: 5rem;
+    font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ff6633;
+}
+
+.bodyParagraph {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+h1 {
+    margin-top: 5rem;
+    font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ff6633;
+}
+
+.listitemsServiceProvider {
+    text-indent: 4rem;
+    list-style: none;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+/*******************************************************************/
+/*      footer content     */
+/*******************************************************************/
+.fix {
+    font-size: x-large;
+    font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+}
+
+.colorRed {
+    color: #ff6633;
+    text-decoration: underline;
+}
+
+.copyright-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 1rem;
+    margin-top: 4rem;
+    /* margin-bottom: 0.4rem; */
+    z-index: auto;
+}
+
+.footer__copyright-bar__list--item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1.5rem;
+    margin-bottom: auto;
+    list-style-type: none;
+    color: white;
+    font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+}
+
+.footer-btn-link {
+    color: white;
+}
+
+.privacy-btn-link {
+    font-size: large;
+    padding: 0 1rem;
+    /* margin-top: 3.5rem; */
+    /* margin-bottom: auto; */
+    color: white;
+}
+
+.terms-btn-link {
+    border-left: 2px solid rgba(204, 204, 204, 0.643);
+    font-size: large;
+    padding: 0 1rem;
+    /* margin-top: 3.5rem; */
+    /* margin-bottom: auto; */
+    color: white;
+}
+
+.cookies-btn-link {
+    border-left: 2px solid rgba(204, 204, 204, 0.643);
+    font-size: large;
+    padding: 0 1rem;
+    /* margin-top: 3.5rem; */
+    /* margin-bottom: auto; */
+    color: white;
+}
+
+.footer__li__copyright-bar__list--item {
+    padding: 0 1rem;
+    margin-top: 4rem;
+    margin-bottom: auto;
+}
+
+.fixawayParagraph {
+    font-size: large;
+    color: white;
+    margin-top: 5.5rem;
+    margin-left: 1rem;
+    /* margin-bottom: auto; */
+    font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+}
+
+.footer__copyright-bar {
+    object-position: center;
+}
+
+.footer {
+    background-image: url(https://fixaway.co/svg/Stripes_with_bottom.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* @media only screen and (max-width: 1800px) {
+  .copyright-bar {
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center; */
+/* padding: 1rem;
+    margin-top: 4rem;
+    /* margin-bottom: 0.4rem; */
+/* z-index: auto; } */
