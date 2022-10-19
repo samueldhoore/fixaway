@@ -66,7 +66,7 @@ img.pic {
 }
 
 
-.reference__primary-section-title-main {
+.title login {
   display: inline-block;
   text-align: center;
   font-size: 4rem;
@@ -80,25 +80,6 @@ img.pic {
   animation-name: moveInLeft;
   animation: 1s ease-out;
 }
-
-/* @media only screen and (max-width: 37.5em) {
-  .reference__primary-section-title-main {
-    font-size: 3rem;
-  }
-} */
-
-.reference__primary-section-title-sub {
-  display: block;
-  text-align: center;
-  font-family: "Oswald", sans-serif;
-  font-size: 4rem;
-  font-weight: 700;
-  color: #33ccff;
-  letter-spacing: 0.1rem;
-  animation-name: moveInRight;
-  animation: 1s ease-out;
-}
-
 
 
 section {
