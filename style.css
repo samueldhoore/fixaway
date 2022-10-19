@@ -30,6 +30,12 @@
   font-style: normal;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");
+
+font-family: "Roboto Serif", serif;
+font-family: "Oswald", sans-serif;
+
 /*******************************************************************/
 /*      General Style       */
 /*******************************************************************/
@@ -45,7 +51,7 @@
 html {
   font-size: 62.5%;
 }
-@media only screen and (max-width: 75em) {
+/* @media only screen and (max-width: 75em) {
   html {
     font-size: 56.25%;
   }
@@ -59,18 +65,21 @@ html {
   html {
     font-size: 75%;
   }
-}
+} */
 
 body {
+  margin: 0;
+  padding: 0;
   font-weight: 300;
+  font-family: "Roboto Serif", serif;
   font-size: 1.5rem;
   box-sizing: border-box;
 }
-@media only screen and (max-width: 56.25em) {
+/* @media only screen and (max-width: 56.25em) {
   body {
     padding: 0;
   }
-}
+} */
 
 /*******************************************************************/
 /*      Header      */
@@ -85,13 +94,15 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  box-sizing: border-box;
 }
 
 .f-logo {
   position: absolute;
   top: 0;
   left: 0;
-  width: 9rem;
+  width: 11rem;
+  /* position: fixed; */
   height: auto;
   z-index: 45;
 }
@@ -104,7 +115,7 @@ body {
   gap: 1rem;
   object-position: center;
   margin-right: 3rem;
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 .header__accessibility__lang-switcher-item {
@@ -121,17 +132,17 @@ a {
   text-decoration: none;
 }
 
-.header__btn__login {
+/* .header__btn__login {
   display: inline-block;
   vertical-align: middle;
   padding: 1rem;
   line-height: 0.875rem;
   font-size: large;
-  font-family: "Filson Pro", "Arial Narrow", Arial, sans-serif;
+  font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
   color: white;
   cursor: pointer;
-}
+} */
 
 .header__navmenu {
   display: flex;
@@ -140,33 +151,36 @@ a {
   text-decoration: none;
   margin-top: 0.5rem;
   border: none;
+  content: ;
 }
 
 .home-btn-link,
 .about-btn-link,
 .contacts-btn-link,
-.projects-btn-link {
-  font-family: "Filson Pro", "Arial Narrow", Arial, sans-serif;
+.projects-btn-link,
+.login-btn-link {
+  font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
   color: #fff;
   font-size: large;
   font-weight: bold;
+  overflow: hidden;
 }
 
 .language-link-dutch,
 .language-link-english,
 .language-link-german,
 .language-link-french {
-  font-family: "Impact", "Arial Narrow", Arial, sans-serif;
+  font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
   font-size: large;
   font-weight: normal;
   text-decoration: none;
   color: #fff;
 }
 
-.navigation {
+/* .navigation {
   flex-grow: 1;
   list-style: none;
-}
+} */
 
 .header__list--item-navigation {
   padding: 1rem 5rem;
@@ -178,9 +192,24 @@ a {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 10rem;
-  margin-right: 1.5rem;
+  /* margin-left: 10rem;
+  margin-right: 1.5rem; */
   list-style-type: none;
+}
+
+.navigationContainer {
+  box-sizing: border-box;
+}
+
+ul a {
+  /* padding: 0.5rem 0.5rem; */
+}
+
+ul:hover a:hover {
+  display: block;
+  background-color: #fff;
+  color: #ff6633;
+  /* padding: 0.5rem 0.5rem; */
 }
 
 /*******************************************************************/
@@ -199,44 +228,33 @@ a {
   display: inline-block;
   text-align: center;
   font-size: 4rem;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 900;
   background-color: #ff6633;
   color: #fff;
   margin-left: 3rem;
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 0.5rem 1.5rem;
   animation-name: moveInLeft;
   animation: 1s ease-out;
 }
 
-@media only screen and (max-width: 37.5em) {
+/* @media only screen and (max-width: 37.5em) {
   .reference__primary-section-title-main {
     font-size: 3rem;
   }
-}
+} */
 
 .reference__primary-section-title-sub {
   display: block;
   text-align: center;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 4rem;
   font-weight: 700;
   color: #33ccff;
   letter-spacing: 0.1rem;
   animation-name: moveInRight;
   animation: 1s ease-out;
-}
-@media only screen and (max-width: 56.25em) {
-  .reference__primary-section-title-sub {
-    font-size: 2.5rem;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .reference__primary-section-title-sub {
-    letter-spacing: 0.5rem;
-    font-size: 2rem;
-  }
 }
 
 .section_reference__primary-section-title {
@@ -249,10 +267,10 @@ a {
   display: inline-block;
 }
 
-.row {
+/* .row {
   max-width: 114rem;
   margin: 0 auto;
-}
+} */
 
 .reference__image-container {
   display: flex;
@@ -269,6 +287,15 @@ a {
   border-color: coral;
   padding: 0 4rem; */
 }
+
+/* @media (min-width: 48em) {
+  .reference__images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5rem;
+    padding: 2rem;
+  }
+} */
 
 /* @media only screen and (max-width: 48rem) {
   .reference__image-container {
@@ -321,7 +348,7 @@ a {
   margin-right: 1.5rem;
 }
 
-@media only screen and (min-width: 56.25em) {
+/* @media only screen and (min-width: 56.25em) {
   .features-icon {
     width: 4rem;
     height: 4rem;
@@ -344,7 +371,7 @@ a {
     height: 4rem;
     margin-right: 1.5rem;
   }
-}
+} */
 
 .information-container-flex {
   display: flex;
@@ -358,14 +385,14 @@ a {
 
 .information-container-flex-paragraph {
   font-size: large;
-  font-family: "Filson Pro", "Arial Narrow", Arial, sans-serif;
+  font-family: "Roboto Serif", serif, Arial, sans-serif;
   text-align: left;
   margin-left: 2rem;
 }
 
 .fix {
   font-size: x-large;
-  font-family: "Filson Pro", "Arial Narrow", Arial, sans-serif;
+  font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
   margin-top: 10rem;
   margin-bottom: 15rem;
 }
@@ -383,7 +410,7 @@ a {
   justify-items: center;
   padding: 1rem;
   margin-top: 4rem;
-  margin-bottom: 0.4rem;
+  /* margin-bottom: 0.4rem; */
   z-index: auto;
 }
 
@@ -394,9 +421,10 @@ a {
   align-items: center;
   margin-left: 1rem;
   margin-right: 1.5rem;
+  margin-bottom: auto;
   list-style-type: none;
   color: white;
-  font-family: "Filson Pro", "Arial Narrow", Arial, sans-serif;
+  font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
 }
 
 .footer-btn-link {
@@ -406,7 +434,8 @@ a {
 .privacy-btn-link {
   font-size: large;
   padding: 0 1rem;
-  margin-top: 3.5rem;
+  /* margin-top: 3.5rem; */
+  /* margin-bottom: auto; */
   color: white;
 }
 
@@ -414,7 +443,8 @@ a {
   border-left: 2px solid rgba(204, 204, 204, 0.643);
   font-size: large;
   padding: 0 1rem;
-  margin-top: 3.5rem;
+  /* margin-top: 3.5rem; */
+  /* margin-bottom: auto; */
   color: white;
 }
 
@@ -422,21 +452,24 @@ a {
   border-left: 2px solid rgba(204, 204, 204, 0.643);
   font-size: large;
   padding: 0 1rem;
-  margin-top: 3.5rem;
+  /* margin-top: 3.5rem; */
+  /* margin-bottom: auto; */
   color: white;
 }
 
 .footer__li__copyright-bar__list--item {
   padding: 0 1rem;
-  margin-top: 3.5rem;
+  margin-top: 4rem;
+  margin-bottom: auto;
 }
 
 .fixawayParagraph {
   font-size: large;
   color: white;
-  margin-top: 3.5rem;
+  margin-top: 5.5rem;
   margin-left: 1rem;
-  font-family: "Filson Pro", "Arial Narrow", Arial, sans-serif;
+  /* margin-bottom: auto; */
+  font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
 }
 
 .footer__copyright-bar {
@@ -449,3 +482,15 @@ a {
   background-size: cover;
   background-position: center;
 }
+
+/* @media only screen and (max-width: 1800px) {
+  .copyright-bar {
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center; */
+/* padding: 1rem;
+    margin-top: 4rem;
+    /* margin-bottom: 0.4rem; */
+/* z-index: auto; } */
