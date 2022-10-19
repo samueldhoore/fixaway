@@ -1,3 +1,4 @@
+/* Pious' code*/
 /*******************************************************************/
 /*      Typography       */
 /*******************************************************************/
@@ -211,6 +212,7 @@ ul:hover a:hover {
   color: #ff6633;
   /* padding: 0.5rem 0.5rem; */
 }
+/* Pious' code*/
 
 h1 {
 display: block;
@@ -252,50 +254,12 @@ text-align: justify;
 text-align-last: center;
 }
 
-nav {
-font-family: 'Roboto Serif', serif;
-text-align: center;
-display: flex;
-justify-content: space-around;
-}
-
-a:link {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:visited {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:active {
-  color: #FF6633;
-  background-color: white;
-  text-decoration: underline;
-}
-
 .fixaway {
   color: white;
   background-color: #FF6633;
 }
-.language {
-  font-family: 'Oswald', sans-serif;
-  color: white;
-}
-.EN {
-  text-decoration: none;
-  color: #33CCFF;
-}
 
+/* Pious' code*/
 .copyright-bar {
   display: flex;
   flex-direction: row;
@@ -389,3 +353,4 @@ a:active {
     /* margin-bottom: 0.4rem; */
 /* z-index: auto; } */
 
+/* Pious' code*/
