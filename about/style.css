@@ -2,13 +2,6 @@
   margin: 0;
 }
 
-.logo {
-  display: flex;
-  position: absolute;
-  height: 50px;
-  width: 50px;
-}
-
 h1 {
 display: block;
 font-family: 'Oswald', sans-serif;
@@ -30,7 +23,9 @@ text-align: center;
 .img2{
   width: 35px;
   height: 35px;
-}.img3{
+}
+
+.img3{
   width: 35px;
   height: 35px;
 }
@@ -40,6 +35,7 @@ text-align: center;
   min-width: 400px;
   max-width: 400px;
 }
+
 p {
 font-family: 'Roboto Serif', serif;
 text-align: justify;
@@ -51,18 +47,6 @@ font-family: 'Roboto Serif', serif;
 text-align: center;
 display: flex;
 justify-content: space-around;
-}
-
-.stripe {
-  width: 26px;
-	height: 26px;
-	transform: skew(-50deg);
-	background-color: #FF6633;
-  }
-  
-.stripes {
-  display: flex;
-  justify-content: space-around;
 }
 
 a:link {
@@ -89,13 +73,6 @@ a:active {
   text-decoration: underline;
 }
 
-u {
-  font-family: 'Oswald', sans-serif;
-  color: #FF6633;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
 .fixaway {
   color: white;
   background-color: #FF6633;
@@ -107,9 +84,4 @@ u {
 .EN {
   text-decoration: none;
   color: #33CCFF;
-}
-
-.aboutus {
-  display: flex;
-  align-items: baseline;
 }
