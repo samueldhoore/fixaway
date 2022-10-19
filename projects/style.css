@@ -291,7 +291,8 @@ h2 {
   }
   
   .fix {
-    font-size: x-large;
+    font-size: large;
+    text-align: center;
     font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
     margin-top: 10rem;
     margin-bottom: 15rem;
