@@ -289,6 +289,7 @@ font-family: 'Roboto Serif', serif;
 
 /* Pious' code*/
 .fix {
+  text-align: center;
   font-size: large;
   font-family: "Roboto Serif", serif;
   margin-top: 10rem;
