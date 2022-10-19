@@ -1,10 +1,11 @@
-*,
+*/**,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
+**/
 
 html {
   font-size: 62.5%;
@@ -88,7 +89,7 @@ a {
   text-decoration: none;
   margin-top: 0.5rem;
   border: none;
-  content: ;
+
 }
 
 .home-btn-link,
@@ -138,9 +139,6 @@ a {
   box-sizing: border-box;
 }
 
-ul a {
-  /* padding: 0.5rem 0.5rem; */
-}
 
 ul:hover a:hover {
   display: block;
@@ -150,25 +148,6 @@ ul:hover a:hover {
 }
 
 
-.reference__primary-section-title-main {
-  text-align: center;
-  font-size: 4rem;
-  font-family: "Oswald", sans-serif;
-  font-weight: 900;
-  background-color: #ff6633;
-  color: #fff;
-  margin-left: 3rem;
-  margin-bottom: 2rem;
-  padding: 0.5rem 1.5rem;
-  animation-name: moveInLeft;
-  animation: 1s ease-out;
-}
-
-/* @media only screen and (max-width: 37.5em) {
-  .reference__primary-section-title-main {
-    font-size: 3rem;
-  }
-} */
 
 
 /***** section positioning *****/
@@ -198,21 +177,6 @@ ul:hover a:hover {
 /***** text style and colors*****/
 
 
-
-h1{
-    display: inline-block;
-    text-align: center;
-    font-size: 4rem;
-    font-family:'Oswald', sans-serif;
-    font-weight: 900;
-    background-color: #ff6633;
-    color: #fff;
-    margin-left: 3rem;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    animation-name: moveInLeft;
-    animation: 1s ease-out;
-  }
     
 
 h2 {
@@ -279,8 +243,7 @@ h2 {
   }
   
   .fix {
-    font-size: large;
-    text-align: center;
+    font-size: x-large;
     font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
     margin-top: 10rem;
     margin-bottom: 15rem;
