@@ -302,7 +302,7 @@ a {
 .language-link-english,
 .language-link-german,
 .language-link-french {
-  font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: large;
   font-weight: normal;
   text-decoration: none;
