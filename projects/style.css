@@ -91,6 +91,7 @@
     object-position: center;
     margin-right: 3rem;
     margin-top: 6rem;
+    font-family: 'Oswald';
   }
   
   .header__accessibility__lang-switcher-item {
@@ -145,13 +146,23 @@
   .language-link-english,
   .language-link-german,
   .language-link-french {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald';
     font-size: large;
     font-weight: normal;
     text-decoration: none;
     color: #fff;
   }
   
+  ul {
+  
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    
+}
+
   /* .navigation {
     flex-grow: 1;
     list-style: none;
@@ -189,25 +200,67 @@
   
   /***** section positioning *****/
   
-  
-  
   .SectionContainer1{
-      display: flex;
-      justify-content: space-around;
-      align-items: left;
+    display: flex;
+    justify-content: space-evenly;
+
+   
+
   }
-  
+
   .SectionContainer2{
-      display: flex;
-      justify-content: space-around;
-      align-items: left;
+    display: flex;
+   justify-content: space-evenly;
+   
+
+    
+    
   }
   
+
+ .SectionContainer1
+ .Section-1A
+ .Section-1AB
+ .Sidewalk
+ p{
+  text-align: left;
+  align-items: center;
+ 
+ }
+
+ .SectionContainer1
+ .Section-1B
+ .Section-1BC
+ .BrokenBikePath
+ p{
+  text-align: left;
+  align-items: center;
   
+ }
+
+ .SectionContainer2
+ .Section-2A
+ .Section-2AB
+ .LackOfBikePaths
+ p{
+  text-align: left;
+  align-items: center;
   
+ }
+
+ .SectionContainer2
+ .Section-2B
+ .Section-2BC
+ .HardForWheelchairs
+ p{
+  text-align: left;
+  align-items: center;
   
-  
-  
+ }
+
+
+
+
   /***** text style and colors*****/
   
   
@@ -216,7 +269,8 @@
   h2 {
       font-family: 'Oswald', sans-serif;
       color: #33CCFF;
-      text-align: left;
+      text-align: center;
+      font-size: xx-large;
   }
         
   
@@ -226,6 +280,45 @@
   }
   
   
+
+  h4 {
+
+    display: inline;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: large;
+    background-color: #ff6633;
+    color: #fff;
+    z-index: 9999;
+    
+  }
+
+  .fixed
+  h4{
+    display: inline;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    background-color: #33CCFF;
+    color: #fff;
+    z-index: 9999;
+    max-width: 9rem;
+  }
+
+
+  .what
+  p{
+    color: #ff6633;
+  }
+
+  
+/***** share button *****/
+
+
+.share{
+  max-width: 8rem;
+  padding-left: 35rem;
+
+}
   
   
   /***** fixaway style and colors*****/
@@ -371,3 +464,9 @@
       background-size: cover;
       background-position: center;
     }
+
+
+
+    /***** ongoing sticker *****/
+
+
