@@ -1,0 +1,149 @@
+<html lang="en-En"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Mobile-web-app-capable" content="yes">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="width">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900&amp;display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="refresh" content="1;url=/contact/v9" />
+  <title>NO_HACKER_ZONE</title>
+</head>
+<body>
+  <!-- <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+    <label for="navi-toggle" class="navigation__button">MENU</label>
+    <div class="navigation__background">&nbsp;</div>
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link"></a>Home
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link"></a>About
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link"></a>Projects
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link"></a>Contacts
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link"></a>Log in
+        </li>
+      </ul>
+    </nav>
+  </div> -->
+  <header class="o-header">
+    <div class="mainLogo">
+      <div class="header__logo">
+        <a href="http://127.0.0.1:5500/index.html" class="header__logo">
+          <img class="f-logo" src="https://dl.dropbox.com/s/6m88wd1xmy706zx/Logo%20Lesley%20Netten.png?dl=1" alt="logo" title="logo">
+        </a>
+      </div>
+    </div>
+    <div class="navigationContainer">
+      <div class="header__navmenu">
+        <ul class="header__list--item">
+          <li class="header__list--item-navigation" data-text="Home">
+            <a class="home-btn-link" href="http://127.0.0.1:5500/index.html">Home</a>
+          </li>
+          <li class="header__list--item-navigation" data-text="About">
+            <a class="about-btn-link" href="#">About</a>
+          </li>
+          <li class="header__list--item-navigation" data-text="Projects">
+            <a class="projects-btn-link" href="#">Projects</a>
+          </li>
+          <li class="header__list--item-navigation" data-text="Contacts">
+            <a class="contacts-btn-link" href="#">Contacts</a>
+          </li>
+          <li class="header__list--item-navigation" data-text="Login">
+            <a class="login-btn-link" href="#">Log in</a>
+          </li>
+        </ul>
+        <div class="accessibility">
+          <ul class="header__accessibility__lang-switcher">
+            <li class="header__accessibility__lang-switcher-item">
+              <a class="language-link-dutch" href="#" hreflang="en">NL</a>
+            </li>
+
+            <li class="header__accessibility__lang-switcher-item">
+              <a class="language-link-english is-active" href="http://127.0.0.1:5500/index.html" hreflang="en"><span style="color: #33ccff">EN</span></a>
+            </li>
+
+            <li class="header__accessibility__lang-switcher-item">
+              <a class="language-link-french is-active" href="#" hreflang="en">FR</a>
+            </li>
+
+            <li class="header__accessibility__lang-switcher-item">
+              <a class="language-link-german is-active" href="#" hreflang="en">DE</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- <main class="websitelayout"> -->
+  
+  
+  <section class="section_reference__primary-section-title">
+<div class="reference__inner--row">
+  <div class="reference__text-box">
+    <h1 class="reference__primary-section-title">
+      <span class="reference__primary-section-title-main">1 SECOND PLEASE</span>
+    </h1>
+  </div>
+  
+  
+
+</div>
+</section>
+<!-- </main> -->
+  
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
