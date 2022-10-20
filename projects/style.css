@@ -193,18 +193,14 @@
   
   .SectionContainer1{
       display: flex;
-      min-width: 50vw;
-      min-height: 50vh;
       justify-content: space-around;
-      align-items: center;
+      align-items: left;
   }
   
   .SectionContainer2{
       display: flex;
-      min-width: 50vw;
-      min-height: 50vh;
       justify-content: space-around;
-      align-items: center;
+      align-items: left;
   }
   
   
@@ -220,7 +216,7 @@
   h2 {
       font-family: 'Oswald', sans-serif;
       color: #33CCFF;
-      text-align: center;
+      text-align: left;
   }
         
   
@@ -232,8 +228,37 @@
   
   
   
-  /***** Image style and colors*****/
+  /***** fixaway style and colors*****/
   
+  .reference__primary-section-title-main {
+    display: inline-block;
+    text-align: center;
+    font-size: 4rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 900;
+    background-color: #ff6633;
+    color: #fff;
+    margin-left: 46vw;
+    margin-bottom: 2rem;
+    padding: 0.5rem 1.5rem;
+    
+  }
+
+  .reference__primary-section-title-sub {
+    display: block;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #33ccff;
+    letter-spacing: 0.1rem;
+    animation-name: moveInRight;
+    animation: 1s ease-out;
+  }
+
+
+
+
   
   /***** footer *****/
   
@@ -255,12 +280,12 @@
     }
     
     .fix {
-      font-size: x-large;
-      font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
-      margin-top: 10rem;
-      margin-bottom: 15rem;
+        text-align: center;
+        font-size: large;
+        font-family: "Roboto Serif", serif;
+        margin-top: 10rem;
+        margin-bottom: 15rem;
     }
-    
     .colorRed {
       color: #ff6633;
       text-decoration: underline;
