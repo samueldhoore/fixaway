@@ -1,135 +1,4 @@
 /*******************************************************************/
-/*   SAMUEL EDIT     */
-/*******************************************************************/
-
-
-.letter-font {
-  font-family: 'Roboto Serif', serif;
-}
-
-.textbox,
-.formbuttons  {
-  /* background-color: blue;*/
-  font-size: large;
-}
-
-table {
-  margin:10px auto;
-  width:1000px;
-  /*! padding:10px; */
-  text-align: center;
-  /*! background-color: pink; */
-}
-
-tr.complaints {
-  align-content: center;
-}
-
-/* Left Table */
-
-td#form {
-  width: 30rem;
-  vertical-align: top;
-}
-
-.textbox {
-  width: 100%;
-  padding: 10px 0px 10px 10px;
-  border:solid 2px #33CCFF;
-  font-family: 'Roboto Serif', serif;
-}
-
-.formbuttons {
-  display: inline-block;
-  text-align: left;
-  font-family: 'Roboto Serif', serif;
-}
-
-#sendbutton {
-  width: 10rem;
-  padding-left: 1rem;
-}
-
-#submit-complaint {
-  padding: 10px;
-}
-
-/* Right Table */
-
-td#pic1 {
-  padding-left: 3rem;
-  vertical-align: top;
-}
-
-img.pic {
-  width:100%;
-}
-
-
-section {
-  background-color: rgb(255, 255, 255);
-  padding: 10px;
-  margin: 10px auto;
-}
-
-
-
-
-/* contact us */
-
-/* table column 1 */
-td#pic2 {
-  width: 38%;
-  vertical-align: top;
-}
-
-/* table column 2 */
-img.contact-logo {
-  width: 11rem;
-  margin: auto;
-}
-
-td.contact-logo {
-  padding-left: 3rem;
-  padding-right: 3rem;
-  width: 24%;
-  vertical-align: top;
-}
-
-#contact-logo-grid {
-  display: grid;
-  row-gap: 1rem;
-}
-
-
-/* table column 3 */
-td#form2 {
-  width: 38%;
-  vertical-align: top;
-}
-
-.textbox-contact {
-  width: 100%;
-  padding: 10px 0px 10px 10px;
-  border:solid 2px #33CCFF;
-  font-family: 'Roboto Serif', serif;
-  font-size: large;
-}
-
-td#message {
-  /*! width: 25%; */
-}
-
-img#sendbutton-contact {
-  width: 10rem;
-  /*! height: 6rem; */
-}
-
-/*******************************************************************/
-/*   PIOUS CODE     */
-/*******************************************************************/
-
-/*******************************************************************/
 /*      Typography       */
 /*******************************************************************/
 
@@ -282,7 +151,6 @@ a {
   text-decoration: none;
   margin-top: 0.5rem;
   border: none;
-  content: ;
 }
 
 .home-btn-link,
@@ -366,8 +234,6 @@ ul:hover a:hover {
   margin-left: 3rem;
   margin-bottom: 2rem;
   padding: 0.5rem 1.5rem;
-  animation-name: moveInLeft;
-  animation: 1s ease-out;
 }
 
 /* @media only screen and (max-width: 37.5em) {
@@ -393,136 +259,142 @@ ul:hover a:hover {
   object-fit: contain;
 }
 
-.reference__images {
-  object-fit: inherit;
-  display: inline-block;
-}
-
-/* .row {
-  max-width: 114rem;
-  margin: 0 auto;
-} */
-
-.reference__image-container {
+.formsContainers {
   display: flex;
   flex-direction: row;
-  /* justify-content: center;
-  overflow: hidden;
-  align-items: center;
-  column-width: cover; */
-  /* width: 100vh;
-  height: 35vh; */
-  /* margin: 0 auto; */
-  /* margin-bottom: 4rem;
-  border-style: solid;
-  border-color: coral;
-  padding: 0 4rem; */
+  justify-content: space-evenly;
 }
 
-/* @media (min-width: 48em) {
-  .reference__images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 5rem;
-    padding: 2rem;
-  }
-} */
-
-/* @media only screen and (max-width: 48rem) {
-  .reference__image-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
-    padding: 1rem;
-  }
-} */
-
-.images {
-  padding: 5rem 1rem;
-  max-width: 100%;
-  height: auto;
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
 }
 
-.information-layout {
-  /* position: absolute; */
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20%;
+  font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+}
+
+.logintext {
+  padding: 2rem;
+  font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+  color: #ff6633;
+  font-weight: bold;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
   text-align: center;
 }
 
-.reference__information {
-  object-fit: inherit;
-  object-position: center;
-  display: inline-block;
-  margin: 0 4rem;
-}
-
-.information-layout .reference__information-container {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  row-gap: 3rem;
+.username1 {
   padding: 1rem;
-  margin-left: 15%;
-  margin-right: 28%;
+  margin-bottom: 2rem;
+  width: 30rem;
+  border-color: #33ccff;
 }
 
-.features-icon {
-  width: 4rem;
+.password {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 30rem;
+  border-color: #33ccff;
+}
+
+.checkbox {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  accent-color: #33ccff;
+}
+
+.submit {
+  padding: 1rem;
+  font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+  width: 8rem;
   height: 4rem;
-  margin-right: 1.5rem;
-}
-
-.needsMoreAttention {
-  width: 6rem;
-  height: 4rem;
-  margin-right: 1.5rem;
-}
-
-/* @media only screen and (min-width: 56.25em) {
-  .features-icon {
-    width: 4rem;
-    height: 4rem;
-    margin-right: 1.5rem;
-  }
-  .needsMoreAttention {
-    width: 6rem;
-    height: 4rem;
-    margin-right: 1.5rem;
-  }
-}
-@media only screen and (min-width: 37.5em) {
-  .features-icon {
-    width: 4rem;
-    height: 4rem;
-    margin-right: 1.5rem;
-  }
-  .needsMoreAttention {
-    width: 6rem;
-    height: 4rem;
-    margin-right: 1.5rem;
-  }
-} */
-
-.information-container-flex {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-
-  /* position: relative;
-  text-align: center; */
-}
-
-.information-container-flex-paragraph {
+  border: none;
+  border-radius: 0 !important;
+  background-color: #33ccff;
+  color: #fff;
+  text-transform: uppercase;
   font-size: large;
-  font-family: "Roboto Serif", serif, Arial, sans-serif;
-  text-align: left;
-  margin-left: 2rem;
+  font-weight: 700;
 }
+
+.register {
+  padding: 2rem;
+  font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+  color: #ff6633;
+  font-weight: bold;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.username {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 30rem;
+  border-color: #33ccff;
+}
+
+.surname {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 30rem;
+  border-color: #33ccff;
+}
+
+.email {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 30rem;
+  border-color: #33ccff;
+}
+
+.registerbutton {
+  padding: 1rem;
+  font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+  width: 12rem;
+  height: 4rem;
+  border: none;
+  border-radius: 0 !important;
+  background-color: #33ccff;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: large;
+  font-weight: 700;
+}
+
+/*******************************************************************/
+/*      Call to action    */
+/*******************************************************************/
 
 .fix {
-  font-size: large;
+  font-size: x-large;
+  font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
+  margin-top: 10rem;
+  margin-bottom: 15rem;
+}
+
+.colorRed {
+  color: #ff6633;
+  text-decoration: underline;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #146f8d;
+  color: #fff;
+}
+
+/*******************************************************************/
+/*      footer content     */
+/*******************************************************************/
+.fix {
+  font-size: x-large;
   font-family: "Roboto Serif", serif, "Arial Narrow", Arial, sans-serif;
   margin-top: 10rem;
   margin-bottom: 15rem;
