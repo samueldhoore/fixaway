@@ -421,6 +421,7 @@
     font: normal normal normal 14px/1 FontAwesome;
     font-size: x-large;
     text-rendering: auto;
+    color: #fff;
     -webkit-font-smoothing: antialiased;
 }
 
