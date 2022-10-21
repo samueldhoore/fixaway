@@ -1,33 +1,3 @@
-.fa-facebook {
-  position: absolute;
-}
-
-fa {
-  position: relative;
-  display: float;
-  font-size: 2rem;
-  width: 2rem;
-  color: #fff;
-  margin-top: 1rem;
-}
-  .fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-    font-size: 14px;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-  
-  .fa-instagram {
-  position: absolute;
-  margin-left: 3rem;
-}
-  .fa-facebook-f::before, .fa-facebook::before {
-  content: "\f09a";
-}
-  
 
 /*******************************************************************/
 /*   SAMUEL EDIT     */
