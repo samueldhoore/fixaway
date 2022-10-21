@@ -569,12 +569,11 @@ ul:hover a:hover {
 /*******************************************************************/
 
 .fa {
-  position: relative;
-  display: float;
-  font-size: large;
-  width: 2rem;
-  color: #fff;
-  margin-top: 1rem;
+     display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: x-large;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
 }
 
 .fa-facebook {
