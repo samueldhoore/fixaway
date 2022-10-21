@@ -434,6 +434,35 @@ button:hover {
   color: white;
 }
 
+/*******************************************************************/
+/*      footer Social Media      */
+/*******************************************************************/
+
+.fa {
+  position: relative;
+  display: float;
+  font-size: 2rem;
+  width: 2rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.fa-facebook {
+  position: absolute;
+}
+
+.fa-instagram {
+  position: absolute;
+  margin-left: 3rem;
+}
+
+.fa-rss {
+  position: absolute;
+  margin-left: 7rem;
+}
+
+/***** buttons *****/
+
 .privacy-btn-link {
   font-size: large;
   padding: 0 1rem;
